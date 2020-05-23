@@ -3,6 +3,7 @@ asignarCodigo = (input) => {
     code = input
 }
 generarAleatorio = () => {
+    code = ""
     for (let index = 0; index < 4; index++) {
         const element = Math.floor(Math.random() * 10) + ""
         if (!code.includes(element)) {
@@ -11,6 +12,8 @@ generarAleatorio = () => {
             index--
         }
     }
+    return code
+
 }
 evaluar = (input) => {
     let resultado = ""
@@ -39,5 +42,6 @@ evaluar = (input) => {
 
 module.exports = {
     evaluar,
-    asignarCodigo
+    asignarCodigo,
+    generarAleatorio
 }

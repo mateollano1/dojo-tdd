@@ -58,3 +58,10 @@ describe("errores de sintaxis", () => {
         expect(codeBreaker.evaluar(4848)).toBe("Debe ingresar un string");
     });
 })
+
+describe("Prueba sobre random", () => {
+    test('se genera un string de cuatro caracteres', () => {
+        code = codeBreaker.generarAleatorio()
+        expect(code.length).toBe(4)
+    });
+})
