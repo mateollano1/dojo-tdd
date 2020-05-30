@@ -1,6 +1,7 @@
 var code = ""
 asignarCodigo = (input) => {
     code = input
+    return code
 }
 generarAleatorio = () => {
     code = ""
